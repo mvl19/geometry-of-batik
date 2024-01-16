@@ -25,7 +25,6 @@ export default function Sidebar({visible, onClick}: SidebarProps) {
                 <Link className="flex items-center p-5 hover:bg-gray-200 gap-5" href='about'>
                     <Image src='/info.svg' alt="about" width={24} height={24} />About me
                 </Link> 
-                
             </nav>
         </>
         
