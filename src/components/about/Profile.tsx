@@ -22,16 +22,19 @@ const SocialCard = ({
 
 export default function Profile() {
     const profileStyle : CSSProperties = {
+        minHeight: "125px",
+        minWidth: "125px",
         height: "125px",
         width: "125px",
         objectFit: "cover",
         borderRadius: "50%",
+        display: "block",
     }
 
     return (
         <main className="pl-8 pr-8">
-            <h3 className="text-4xl pl-8">About Me</h3>
-            <section className="flex rounded-xl items-center justify-center pl-8 pr-8 pt-8 grow-1 gap-8">
+            <h3 className="text-base lg:text-4xl md:text-3xl pl-8 ">About Me</h3>
+            <section className="flex rounded-xl items-center justify-center pl-8 pr-8 pt-8 grow-1 gap-8 flex-wrap">
                 <figure className="flex flex-col items-center">
                     <Image src='/dog.jpg' alt="Profile Image"  width={125} height={125} style={profileStyle}
                     className="" />
@@ -42,9 +45,9 @@ export default function Profile() {
                         <SocialCard src="./socials/linkedin.svg" to='https://id.linkedin.com/in/dimasicr' alt="LinkedIn Link" />
                     </figcaption>
                 </figure>
-                <div>
-                    <h3 className="text-3xl md:text-4xl lg:text-5xl font-mono animate-type overflow-hidden whitespace-nowrap tracking-wide border-r-4">
-                        Hi, I am Dimas Indra.
+                <div className="flex flex-wrap">
+                    <h3 className="text-base sm:text-xl md:text-3xl lg:text-4xl font-mono animate-type overflow-hidden whitespace-nowrap tracking-wide border-r-4">
+                        Hi there, I am Dimas Indra.
                     </h3>
                 </div>
             </section>
