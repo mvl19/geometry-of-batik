@@ -1,4 +1,4 @@
-import { useState, Suspense } from "react";
+import { useState } from "react";
 import { StlViewer } from "react-stl-viewer";
 
 interface CardProps {
@@ -17,7 +17,7 @@ export default function Card({url, description="dummy"}: CardProps) {
                 orbitControls
                 shadows
                 showAxes
-                onFinishLoading={()=>{setLoad(false); console.log(load)}}
+                onFinishLoading={()=>{setLoad(false)}}
                 url={url}
             />
             {load && <p>Loading</p>}

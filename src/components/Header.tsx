@@ -15,10 +15,10 @@ export default function Header({onClick}: {onClick: ()=> void}) {
                 </div>
                 <div className="flex gap-4 items-center">
                     <Link href="/"><Image src='/geobatik.svg' alt="Geometry Of Batik Logo" width={0} height={0} style={LogoStyle} /> </Link>
-                    <span className="text-base">Geometry Of Batik</span>
+                    <span className="lg-text-base">Geometry Of Batik</span>
                 </div>
             </div>
-            <div className="pr-4">
+            <div className="pr-4 text-sm md:text-base w-[22ch] overflow-hidden whitespace-normal border-r-4">
                 By Dimas Indra
             </div>
         </header>
