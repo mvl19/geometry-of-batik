@@ -2,7 +2,7 @@ import Image from "next/image";
 import { CSSProperties } from "react";
 import Link from "next/link";
 
-export default function Header({onClick}: {onClick: ()=> void}) {
+export default function Header({onClick, lightMode=false}: {onClick: ()=> void, lightMode:boolean}) {
     const LogoStyle : CSSProperties = {
         width: "auto",
         height: 24,
@@ -14,8 +14,8 @@ export default function Header({onClick}: {onClick: ()=> void}) {
                     <Image src='/menu.svg' alt="" width={24} height={24} onClick={onClick} />
                 </div>
                 <div className="flex gap-4 items-center">
-                    <Link href="/"><Image src='/geobatik.svg' alt="Geometry Of Batik Logo" width={0} height={0} style={LogoStyle} /> </Link>
-                    <span className="lg-text-base">Geometry Of Batik</span>
+                    <Link href="/"><Image src='/geobatik.svg' alt="Geometry Of Batik Logo" width={0} height={0} style={LogoStyle}/> </Link>
+                    <span className="text-sm lg:text-base">Geometry Of Batik</span>
                 </div>
             </div>
             <div className="pr-4 text-sm md:text-base w-[22ch] overflow-hidden whitespace-normal border-r-4">

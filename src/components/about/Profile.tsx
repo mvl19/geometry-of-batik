@@ -32,9 +32,9 @@ export default function Profile() {
     }
 
     return (
-        <main className="pl-8 pr-8">
-            <h3 className="text-base lg:text-4xl md:text-3xl pl-8 ">About Me</h3>
-            <section className="flex rounded-xl items-center justify-center pl-8 pr-8 pt-8 grow-1 gap-8 flex-wrap">
+        <main className="pl-8 pr-8 pb-8 bg-[#eae7dc] text-black">
+            <h3 className="text-2xl lg:text-4xl md:text-3xl pt-8 border-black border-b-2">About Me</h3>
+            <section className="flex rounded-xl items-center justify-center pl-8 pr-8 pt-8 grow-1 gap-8 flex-wrap border-black">
                 <figure className="flex flex-col items-center">
                     <Image src='/dog.jpg' alt="Profile Image"  width={125} height={125} style={profileStyle}
                     className="" />
@@ -46,7 +46,7 @@ export default function Profile() {
                     </figcaption>
                 </figure>
                 <div className="flex flex-wrap">
-                    <h3 className="text-base sm:text-xl md:text-3xl lg:text-4xl font-mono animate-type overflow-hidden whitespace-nowrap tracking-wide border-r-4">
+                    <h3 className="text-xl md:text-2xl lg:text-3xl font-mono animate-type overflow-hidden whitespace-nowrap tracking-wide border-r-4">
                         Hi there, I am Dimas Indra.
                     </h3>
                 </div>
