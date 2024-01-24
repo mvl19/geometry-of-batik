@@ -14,7 +14,7 @@ export default function Header({onClick, lightMode=false}: {onClick: ()=> void, 
                     <Image src='/menu.svg' alt="" width={24} height={24} onClick={onClick} />
                 </div>
                 <div className="flex gap-4 items-center">
-                    <Link href="/"><Image src='/geobatik.svg' alt="Geometry Of Batik Logo" width={0} height={0} style={LogoStyle}/> </Link>
+                    <Link href="/"><Image src='/nextjs-github-pages/geobatik.svg' alt="Geometry Of Batik Logo" width={0} height={0} style={LogoStyle}/> </Link>
                     <span className="text-sm lg:text-base">Geometry Of Batik</span>
                 </div>
             </div>
