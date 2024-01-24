@@ -2,7 +2,7 @@ import Image from "next/image";
 import { CSSProperties } from "react";
 import Link from "next/link";
 
-export default function Header({onClick, lightMode=false}: {onClick: ()=> void, lightMode:boolean}) {
+export default function Header({onClick, lightMode=false}: {onClick: ()=> void, lightMode?:boolean}) {
     const LogoStyle : CSSProperties = {
         width: "auto",
         height: 24,
